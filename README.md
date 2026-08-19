@@ -14,7 +14,7 @@
 
 | Network | Address |
 |---------|---------|
-| Preprod | `0x0200cba046217b92d25f04b0eab46c373dfe9f5d09093b1f00fdb466b8a2` |
+| Preprod | `0x020065244a0bccd39d8e9957b8db38240d72ba33ff43531e5543b898398c` |
 
 ---
 
