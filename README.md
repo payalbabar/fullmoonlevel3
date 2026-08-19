@@ -12,6 +12,7 @@
 ## 🌐 Live Demo & Project Assets
 
 - 🔗 **Live Demo Application:** [https://fullmoonlevel3.vercel.app/](https://fullmoonlevel3.vercel.app/)
+- 📹 **Demo Video (YouTube):** [https://youtu.be/bkhmGRt6eLM](https://youtu.be/bkhmGRt6eLM)
 - 📜 **Deployed Smart Contract (Preprod):** [`0x020065244a0bccd39d8e9957b8db38240d72ba33ff43531e5543b898398c`](https://preprod.midnight.network)
 
 ### 🎬 Interactive Application Demo Video (1-Minute Full Flow)
