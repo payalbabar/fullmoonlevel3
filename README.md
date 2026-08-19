@@ -11,12 +11,13 @@
 
 ## 🌐 Live Demo & Project Assets
 
-- 🔗 **Live Demo Application:** [https://midnight-pass.vercel.app/](https://midnight-pass.vercel.app/)
+- 🔗 **Live Demo Application:** `[PENDING_USER_LIVE_URL]`
 - 📜 **Deployed Smart Contract (Preprod):** [`0x020065244a0bccd39d8e9957b8db38240d72ba33ff43531e5543b898398c`](https://preprod.midnight.network)
 
 ### 🎬 Interactive Application Demo Video (1-Minute Full Flow)
 
-![MidnightPass Interactive Demo](./assets/demo.webp)
+- 📹 **Demo Video Link:** `[PENDING_USER_VIDEO_URL]`
+- 🎞️ **Recorded Local Demo:** `./assets/demo.webp`
 
 ### 🧪 Test Suite Output (4/4 Passing Tests)
 
