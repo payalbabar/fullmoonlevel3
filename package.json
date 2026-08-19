@@ -1,0 +1,32 @@
+{
+  "name": "midnightpass-eligibility-gate",
+  "version": "1.0.0",
+  "description": "Privacy-Preserving Age & Eligibility Gate on Midnight Network",
+  "type": "module",
+  "scripts": {
+    "compact-compile": "wsl /home/paras/.compact/versions/0.31.1/x86_64-unknown-linux-musl/compactc contracts/eligibility.compact managed/eligibility",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "test": "npx vitest run --config vitest.config.ts"
+  },
+  "dependencies": {
+    "@midnight-ntwrk/compact-runtime": "^0.16.0",
+    "@midnight-ntwrk/dapp-connector-api": "^4.0.1",
+    "@sentry/react": "^10.69.0",
+    "@tanstack/react-query": "^5.101.4",
+    "ethers": "^6.17.0",
+    "lucide-react": "^0.428.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.1",
+    "vitest": "^2.0.0"
+  }
+}
