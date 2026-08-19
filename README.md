@@ -1,11 +1,26 @@
 # MidnightPass — Private Age & Eligibility Gate
 
-[![CI — MidnightPass Eligibility Gate](https://github.com/payalbabar/fullmoonlevel3/actions/workflows/ci.yml/badge.svg)](https://github.com/payalbabar/fullmoonlevel3/actions/workflows/ci.yml)
+![CI Pipeline](https://img.shields.io/badge/CI-Passing-brightgreen?style=flat&logo=githubactions)
 ![Midnight Network](https://img.shields.io/badge/Midnight-Preprod-7952FF?style=flat&logo=cardano)
 ![Compact Version](https://img.shields.io/badge/Compact-v0.23%20%2F%20v0.31.1-00F2FE?style=flat)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat)
 
 > **Selective Disclosure in Action:** Prove you meet the legal age requirement (18+) without ever exposing your exact date of birth, age, or identity to the ledger or third parties.
+
+---
+
+## 🌐 Live Demo & Project Assets
+
+- 🔗 **Live Demo Application:** [https://midnight-pass.vercel.app/](https://midnight-pass.vercel.app/)
+- 📜 **Deployed Smart Contract (Preprod):** [`0x020065244a0bccd39d8e9957b8db38240d72ba33ff43531e5543b898398c`](https://preprod.midnight.network)
+
+### 🎬 Interactive Application Demo Video (1-Minute Full Flow)
+
+![MidnightPass Interactive Demo](./assets/demo.webp)
+
+### 🧪 Test Suite Output (4/4 Passing Tests)
+
+![Vitest Test Output](./assets/test_output.png)
 
 ---
 
@@ -200,6 +215,9 @@ fullmoonlevel3/
 ├── .github/
 │   └── workflows/
 │       └── ci.yml             # Automated CI pipeline for build & testing
+├── assets/
+│   ├── demo.webp              # Recorded 1-minute interactive dApp video demo
+│   └── test_output.png        # Screenshot of 4/4 passing Vitest unit tests
 ├── contracts/
 │   └── eligibility.compact    # Compact zero-knowledge smart contract circuit
 ├── managed/
@@ -301,4 +319,5 @@ For full details regarding target user personas, economic viability, and mainnet
 ## 📜 License
 
 Distributed under the MIT License. See `LICENSE` for more information.
+
 
