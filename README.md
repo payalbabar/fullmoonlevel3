@@ -1,6 +1,6 @@
 # MidnightPass
 
-![CI](https://github.com/[OWNER]/[REPO]/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/payalbabar/fullmoonlevel3/actions/workflows/ci.yml/badge.svg)
 
 > Prove you're eligible without revealing your exact age.
 
@@ -8,13 +8,13 @@
 
 ## Live Demo
 
-[Live URL — to be added after deployment]
+[Live URL](https://midnight-pass.vercel.app/)
 
 ## Contract Address
 
 | Network | Address |
 |---------|---------|
-| Preprod | [PASTE CONTRACT ADDRESS] |
+| Preprod | `0x0200cba046217b92d25f04b0eab46c373dfe9f5d09093b1f00fdb466b8a2` |
 
 ---
 
@@ -81,7 +81,7 @@ An on-chain observer **cannot** see:
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/[OWNER]/[REPO].git
+git clone https://github.com/payalbabar/fullmoonlevel3.git
 cd midnightpass-eligibility-gate
 
 # 2. Install dependencies

@@ -38,49 +38,54 @@
   "witnesses": [
     {
       "name": "secret_dob_year",
-      "arguments": [],
-      "result-type": {
+      "arguments": [
+      ],
+      "result type": {
         "type-name": "Uint",
         "maxval": 4294967295
       }
     },
     {
       "name": "secret_dob_month",
-      "arguments": [],
-      "result-type": {
+      "arguments": [
+      ],
+      "result type": {
         "type-name": "Uint",
         "maxval": 4294967295
       }
     },
     {
       "name": "secret_dob_day",
-      "arguments": [],
-      "result-type": {
+      "arguments": [
+      ],
+      "result type": {
         "type-name": "Uint",
         "maxval": 4294967295
       }
     },
     {
       "name": "user_public_key",
-      "arguments": [],
-      "result-type": {
+      "arguments": [
+      ],
+      "result type": {
         "type-name": "Bytes",
         "length": 32
       }
     }
   ],
-  "contracts": [],
+  "contracts": [
+  ],
   "ledger": [
     {
       "name": "eligibility",
       "index": 0,
       "exported": true,
       "storage": "Map",
-      "key-type": {
+      "key": {
         "type-name": "Bytes",
         "length": 32
       },
-      "value-type": {
+      "value": {
         "type-name": "Boolean"
       }
     }

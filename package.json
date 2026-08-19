@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "compact-compile": "wsl /home/paras/.compact/versions/0.31.1/x86_64-unknown-linux-musl/compactc contracts/eligibility.compact managed/eligibility",
+    "deploy": "npx tsx src/deploy.ts",
     "dev": "vite",
     "build": "tsc && vite build",
     "test": "npx vitest run --config vitest.config.ts"

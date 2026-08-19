@@ -1,10 +1,10 @@
 import type * as __compactRuntime from '@midnight-ntwrk/compact-runtime';
 
 export type Witnesses<PS> = {
-  secret_dob_year(context: __compactRuntime.WitnessContext<PS>): [PS, bigint];
-  secret_dob_month(context: __compactRuntime.WitnessContext<PS>): [PS, bigint];
-  secret_dob_day(context: __compactRuntime.WitnessContext<PS>): [PS, bigint];
-  user_public_key(context: __compactRuntime.WitnessContext<PS>): [PS, Uint8Array];
+  secret_dob_year(context: __compactRuntime.WitnessContext<Ledger, PS>): [PS, bigint];
+  secret_dob_month(context: __compactRuntime.WitnessContext<Ledger, PS>): [PS, bigint];
+  secret_dob_day(context: __compactRuntime.WitnessContext<Ledger, PS>): [PS, bigint];
+  user_public_key(context: __compactRuntime.WitnessContext<Ledger, PS>): [PS, Uint8Array];
 }
 
 export type ImpureCircuits<PS> = {
@@ -32,7 +32,13 @@ export type Circuits<PS> = {
 }
 
 export type Ledger = {
-  readonly eligibility: __compactRuntime.StateMapHelper<Uint8Array, boolean>;
+  eligibility: {
+    isEmpty(): boolean;
+    size(): bigint;
+    member(key_0: Uint8Array): boolean;
+    lookup(key_0: Uint8Array): boolean;
+    [Symbol.iterator](): Iterator<[Uint8Array, boolean]>
+  };
 }
 
 export type ContractReferenceLocations = any;

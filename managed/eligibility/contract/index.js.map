@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "file": "index.js",
+  "sourceRoot": "../../../",
+  "sources": ["contracts/eligibility.compact"],
+  "names": [],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EAAA;;;;;;;;;;;;;;;;;;;;;;MAgBA,AAAA,iBA+BC;;;;;cA9BG,cAAsB;cACtB,eAAuB;cACvB,aAAqB;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;yCAFrB,cAAsB,+BACtB,eAAuB,+BACvB,aAAqB;;;;;;;;;mDAFrB,cAAsB;mDACtB,eAAuB;mDACvB,aAAqB;;;OA4BxB;;;;;;;;GACA;EAhDD;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAKA;;;;;;;;;;yEAAmD;;;;;;;GA2ClD;EAxCD,AAAA,kBAAoC;;0DAApC,eAAoC;;;;;;;;;;;;;;GAAA;EACpC,AAAA,mBAAqC;;0DAArC,gBAAqC;;;;;;;;;;;;;;GAAA;EACrC,AAAA,iBAAmC;;0DAAnC,cAAmC;;;;;;;;;;;;;;GAAA;EAGnC,AAAA,kBAAqC;;0DAArC,eAAqC;;;;;;;;;;;;;;GAAA;EAGrC,AAAA,oBA+BC;;uBA9BG,cAAsB;uBACtB,eAAuB;uBACvB,aAAqB;;UAEf,UAA4B;UAC5B,WAA8B;UAC9B,SAA0B;UAG1B,WAAmC,4BAAvB,cAAY,IAAG,UAAQ;;yBAAvB,cAAY,GAAG,UAAQ;UAEnC,UAAyB,GAAd,WAAS;UACpB,UAA0B,iBAAf,WAAS;UAEpB,UAAoC,GAAzB,eAAa,GAAG,WAAS;UACpC,aAAwC,iBAA1B,eAAa,EAAI,WAAS;UACxC,QAA+B,GAAtB,aAAW,IAAI,SAAO;UAE/B,aAA6E,GAA/D,UAAQ;;0BAAK,UAAQ;;2BAAK,UAAQ,IAAK,aAAW,IAAI,QAAM;4BAGzE,aAAW;UAGZ,IAAsB;IAG5B;;;;;;;;;;2HAA4B,IAAE;;;;;;wEAAnB;;GAGd;;;;;;;;;;;;;;;;;;;;;;;;IA1CD;;;;;uCAAA;;;;;;;;;;;;;;;;4GAAmD;;;;;;uCAAnD;;;;;;;;;;;;4GAAmD;;;;;;;;;;;;;;uCAAnD;;;;;;;;;;;;;;;4GAAmD;;;;;;;;;;;;;;uCAAnD;;;;;;;;;;;;;;;;;4GAAmD;;;;;;;;;KAAA;;;;;;;;;;;;;;;"
+}
