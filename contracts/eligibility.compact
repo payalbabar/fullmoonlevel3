@@ -1,0 +1,48 @@
+pragma language_version 0.23;
+
+import CompactStandardLibrary;
+
+// Ledger state mapping a public key/address to their verified eligibility status
+export ledger eligibility: Map<Bytes<32>, Boolean>;
+
+// Witnesses supplying the private date of birth off-chain
+witness secret_dob_year(): Uint<32>;
+witness secret_dob_month(): Uint<32>;
+witness secret_dob_day(): Uint<32>;
+
+// Witness supplying the user's public key (to write into the ledger map)
+witness user_public_key(): Bytes<32>;
+
+// Circuit that verifies the user is at least 18 years old based on the current calendar date
+export circuit prove_eligibility(
+    current_year: Uint<32>,
+    current_month: Uint<32>,
+    current_day: Uint<32>
+): Boolean {
+    const dob_year = secret_dob_year();
+    const dob_month = secret_dob_month();
+    const dob_day = secret_dob_day();
+
+    // Verify age condition: current_date - dob >= 18 years
+    const year_diff = current_year - dob_year;
+    
+    const is_older = year_diff > 18;
+    const is_exact = year_diff == 18;
+    
+    const month_ok = current_month > dob_month;
+    const month_equal = current_month == dob_month;
+    const day_ok = current_day >= dob_day;
+    
+    const is_eligible = is_older || (is_exact && (month_ok || (month_equal && day_ok)));
+    
+    // Enforce condition in ZK proof generation
+    assert(is_eligible, "User is not 18 years or older");
+    
+    // Obtain the user's public key to record their eligibility status on the public ledger
+    const pk = user_public_key();
+    
+    // Insert into public ledger map
+    eligibility.insert(disclose(pk), disclose(true));
+    
+    return true;
+}
