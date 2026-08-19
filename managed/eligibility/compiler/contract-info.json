@@ -1,0 +1,88 @@
+{
+  "compiler-version": "0.31.1",
+  "language-version": "0.23.0",
+  "runtime-version": "0.16.0",
+  "circuits": [
+    {
+      "name": "prove_eligibility",
+      "pure": false,
+      "proof": true,
+      "arguments": [
+        {
+          "name": "current_year",
+          "type": {
+            "type-name": "Uint",
+            "maxval": 4294967295
+          }
+        },
+        {
+          "name": "current_month",
+          "type": {
+            "type-name": "Uint",
+            "maxval": 4294967295
+          }
+        },
+        {
+          "name": "current_day",
+          "type": {
+            "type-name": "Uint",
+            "maxval": 4294967295
+          }
+        }
+      ],
+      "result-type": {
+        "type-name": "Boolean"
+      }
+    }
+  ],
+  "witnesses": [
+    {
+      "name": "secret_dob_year",
+      "arguments": [],
+      "result-type": {
+        "type-name": "Uint",
+        "maxval": 4294967295
+      }
+    },
+    {
+      "name": "secret_dob_month",
+      "arguments": [],
+      "result-type": {
+        "type-name": "Uint",
+        "maxval": 4294967295
+      }
+    },
+    {
+      "name": "secret_dob_day",
+      "arguments": [],
+      "result-type": {
+        "type-name": "Uint",
+        "maxval": 4294967295
+      }
+    },
+    {
+      "name": "user_public_key",
+      "arguments": [],
+      "result-type": {
+        "type-name": "Bytes",
+        "length": 32
+      }
+    }
+  ],
+  "contracts": [],
+  "ledger": [
+    {
+      "name": "eligibility",
+      "index": 0,
+      "exported": true,
+      "storage": "Map",
+      "key-type": {
+        "type-name": "Bytes",
+        "length": 32
+      },
+      "value-type": {
+        "type-name": "Boolean"
+      }
+    }
+  ]
+}
